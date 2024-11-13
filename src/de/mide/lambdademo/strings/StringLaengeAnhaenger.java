@@ -1,7 +1,7 @@
 package de.mide.lambdademo.strings;
 
 
-/**
+/** 
  * Implementierung von SAM-Interface {@link IStringBearbeiter}
  * mit einer separaten Klassen.
  */
