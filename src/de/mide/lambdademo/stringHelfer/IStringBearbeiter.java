@@ -18,6 +18,6 @@ public interface IStringBearbeiter {
 	 * 
 	 * @return Ergebnis der Bearbeitung von {@code inputString}
 	 */
-	public String stringBearbeiten( String inputString );
+	public String verarbeiten( String inputString );
 	
 }

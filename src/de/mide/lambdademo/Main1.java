@@ -14,7 +14,7 @@ public class Main1 {
 		
 		final IStringBearbeiter sb = new StringDekorierer();
 				
-		final String ergebnis = sb .stringBearbeiten( "Gurkensalat" );
+		final String ergebnis = sb .verarbeiten( "Gurkensalat" );
 		System.out.println( ergebnis );
 	}
 	

@@ -20,7 +20,7 @@ public class Main3 {
 			return ergebnisString;			
 		};
 
-		final String ergebnis = sb .stringBearbeiten( "Nudelauflauf" );
+		final String ergebnis = sb .verarbeiten( "Nudelauflauf" );
 		System.out.println( ergebnis );
 	}
 	

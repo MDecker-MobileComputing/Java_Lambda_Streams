@@ -21,7 +21,7 @@ public class StringDekorierer implements IStringBearbeiter {
 	 *         zurückgegeben.
 	 */
 	@Override
-	public String stringBearbeiten( String inputString ) {
+	public String verarbeiten( String inputString ) {
 
 		String ergebnisString = inputString.trim();
 		final int laenge = ergebnisString.length();

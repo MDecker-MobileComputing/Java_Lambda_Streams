@@ -14,7 +14,7 @@ public class Main2 {
 		final IStringBearbeiter sb = new IStringBearbeiter() {
 			
 			@Override
-			public String stringBearbeiten( String inputString ) {
+			public String verarbeiten( String inputString ) {
 			
 				String ergebnisString = inputString.trim();
 				final int laenge = ergebnisString.length();
@@ -24,7 +24,7 @@ public class Main2 {
 			}
 		};
 		
-		final String ergebnis = sb .stringBearbeiten( "Leberwurst" );
+		final String ergebnis = sb .verarbeiten( "Leberwurst" );
 		System.out.println( ergebnis );
 	}
 	
