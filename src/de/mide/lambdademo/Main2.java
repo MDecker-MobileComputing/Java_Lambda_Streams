@@ -16,11 +16,7 @@ public class Main2 {
 			@Override
 			public String verarbeiten( String inputString ) {
 			
-				String ergebnisString = inputString.trim();
-				final int laenge = ergebnisString.length();
-
-				ergebnisString += " (" + laenge + ")";
-				return ergebnisString;
+				return inputString + " (" + inputString.length() + ")"; 
 			}
 		};
 		

@@ -1,7 +1,7 @@
 package de.mide.lambdademo;
 
 import de.mide.lambdademo.stringHelfer.IStringBearbeiter;
-import de.mide.lambdademo.stringHelfer.StringDekorierer;
+import de.mide.lambdademo.stringHelfer.StringLaengeAnhaenger;
 
 
 /**
@@ -12,7 +12,7 @@ public class Main1 {
 
 	public static void main( String[] args ) {
 		
-		final IStringBearbeiter sb = new StringDekorierer();
+		final IStringBearbeiter sb = new StringLaengeAnhaenger();
 				
 		final String ergebnis = sb .verarbeiten( "Gurkensalat" );
 		System.out.println( ergebnis );

@@ -4,7 +4,7 @@ package de.mide.lambdademo.stringHelfer;
  * Implementierung von SAM-Interface {@link IStringBearbeiter}
  * mit einer separaten Klassen.
  */
-public class StringDekorierer implements IStringBearbeiter {
+public class StringLaengeAnhaenger implements IStringBearbeiter {
 
 	/**
 	 * Implementierung der einzigen Methode aus dem Interface
@@ -23,11 +23,7 @@ public class StringDekorierer implements IStringBearbeiter {
 	@Override
 	public String verarbeiten( String inputString ) {
 
-		String ergebnisString = inputString.trim();
-		final int laenge = ergebnisString.length();
-
-		ergebnisString += " (" + laenge + ")";
-		return ergebnisString;
+		return inputString + " (" + inputString.length() + ")"; 
 	}
 
 }
