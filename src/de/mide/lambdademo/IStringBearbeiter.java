@@ -4,7 +4,7 @@ package de.mide.lambdademo;
 /**
  * Dieses Interface enthält nur eine abstrakte Methode, deshalb ist es
  * ein SAM-Interface (Single Abstract Method, funktionale Schnittstelle) 
- * und kann damit auch als Lambda-Ausdruck geschrieben werden. 	
+ * und kann damit auch durch einen Lambda-Ausdruck implementiert werden.
  */
 @FunctionalInterface
 public interface IStringBearbeiter {
