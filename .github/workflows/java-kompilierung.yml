@@ -11,16 +11,15 @@ jobs:
       uses: actions/checkout@v4
 
     - name: JDK einrichten
-      uses: actions/setup-java@v3
+      uses: actions/setup-java@v4
       with:
         java-version: 23
         distribution: 'temurin'
-        cache: maven
 
-    - name: Compile Java classes
+    - name: Java-Klassen kompilieren
       run: javac -d classes src/de/mide/lambdademo/**/*.java
 
-    - name: Verify compilation
+    - name: Überprüfen, ob class-Dateien erzeugt wurden
       run: |
         if [ -z "$(ls -A classes)" ]; then
           echo "Fehler: Es wurden keine Klassen-Dateien erzeugt."
