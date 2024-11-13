@@ -17,7 +17,9 @@ jobs:
         distribution: 'temurin'
 
     - name: Java-Klassen kompilieren
-      run: javac -d classes -sourcepath src src/de/mide/lambdademo/**/*.java
+      run: |
+           find src -name "*.java" > sources.txt
+           javac @sources.txt -d classes
 
     - name: Überprüfen, ob class-Dateien erzeugt wurden
       run: |
