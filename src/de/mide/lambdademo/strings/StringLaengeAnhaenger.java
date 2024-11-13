@@ -1,4 +1,5 @@
-package de.mide.lambdademo.stringHelfer;
+package de.mide.lambdademo.strings;
+
 
 /**
  * Implementierung von SAM-Interface {@link IStringBearbeiter}

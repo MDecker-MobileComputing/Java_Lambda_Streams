@@ -1,6 +1,4 @@
-package de.mide.lambdademo;
-
-import de.mide.lambdademo.stringHelfer.IStringBearbeiter;
+package de.mide.lambdademo.strings;
 
 
 /**
@@ -9,7 +7,7 @@ import de.mide.lambdademo.stringHelfer.IStringBearbeiter;
  */
 public class Main3 {
 
-	public static void main(String[] args) {
+	public static void main( String[] args ) {
 
 		String ergebnis = null;
 

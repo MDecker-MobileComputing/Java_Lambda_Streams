@@ -1,7 +1,4 @@
-package de.mide.lambdademo;
-
-import de.mide.lambdademo.stringHelfer.IStringBearbeiter;
-import de.mide.lambdademo.stringHelfer.StringLaengeAnhaenger;
+package de.mide.lambdademo.strings;
 
 
 /**

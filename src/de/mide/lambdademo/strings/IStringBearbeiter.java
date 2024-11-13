@@ -1,4 +1,4 @@
-package de.mide.lambdademo.stringHelfer;
+package de.mide.lambdademo.strings;
 
 
 /**

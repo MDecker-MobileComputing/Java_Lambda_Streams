@@ -1,6 +1,4 @@
-package de.mide.lambdademo;
-
-import de.mide.lambdademo.stringHelfer.IStringBearbeiter;
+package de.mide.lambdademo.strings;
 
 
 /**
