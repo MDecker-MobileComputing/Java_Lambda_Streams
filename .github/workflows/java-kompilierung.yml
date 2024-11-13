@@ -1,0 +1,26 @@
+name: Java-Kompilierung
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: JDK einrichten
+      uses: actions/setup-java@v4
+      with:
+        java-version: '23'
+
+    - name: Compile Java classes
+      run: javac -d classes src/de/mide/lambdademo/**/*.java
+
+    - name: Verify compilation
+      run: |
+        if [ -z "$(ls -A classes)" ]; then
+          echo "Fehler: Es wurden keine Klassen-Dateien erzeugt."
+          exit 1
+        fi
