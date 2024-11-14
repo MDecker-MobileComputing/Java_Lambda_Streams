@@ -44,7 +44,7 @@ public class ZaehlButtonsFrame extends JFrame {
 	    final JPanel panel = new JPanel();
 	    panel.setLayout(layout);
 	    
-		panel.setBorder(new EmptyBorder( 10, 10, 10, 10 ) );
+		panel.setBorder( new EmptyBorder( 10, 10, 10, 10 ) ); // Abstand an allen vier Seiten zwischen Buttons und Rahmen
 
 		
 		final JButton button1 = new JButton( _zaehler1 + "" );

@@ -1,6 +1,10 @@
 package de.mide.lambdademo.wuerfel;
 
 
+/**
+ * Beispiel für Verwendung der Klasse {@link StandardWuerfel},
+ * die das Interface {@link IWuerfel} implementiert.
+ */
 public class Main1 {
 
 	public static void main(String[] args) {

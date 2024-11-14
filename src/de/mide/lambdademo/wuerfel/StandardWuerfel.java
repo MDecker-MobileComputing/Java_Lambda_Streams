@@ -14,10 +14,9 @@ public class StandardWuerfel implements IWuerfel {
 	
 	
 	/** 
-	 * Einzige Methode von SAM-Interface {@code IWurfel}
-	 * überschreiben.
+	 * Einzige Methode von SAM-Interface {@link IWuerfel} implementieren. 
 	 * 
-	 * @return Zufallszahl zwischen 1 und 6
+	 * @return Zufallszahl zwischen 1 und 6 (jeweils einschließlich)
 	 */
 	@Override
 	public int wuerfeln() {
