@@ -7,12 +7,15 @@ package de.mide.lambdademo.strings;
  */
 public class Main1 {
 
+    /**
+     * Einstiegspunkt für Programmausführung.
+     */
 	public static void main( String[] args ) {
-		
+
 		final IStringBearbeiter sb = new StringLaengeAnhaenger();
-				
+
 		final String ergebnis = sb .verarbeiten( "Gurkensalat" );
 		System.out.println( ergebnis );
 	}
-	
+
 }
