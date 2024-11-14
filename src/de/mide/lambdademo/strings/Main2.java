@@ -21,7 +21,7 @@ public class Main2 {
 			}
 		};
 
-		final String ergebnis = sb .verarbeiten( "Leberwurst" );
+		final String ergebnis = sb.verarbeiten( "Leberwurst" );
 		System.out.println( ergebnis );
 	}
 
