@@ -6,6 +6,18 @@ Dieses Repo enthält ein Eclipse-Projekt mit einigen Beispiel-Dateien zur Demons
 
 <br>
 
+----
+
+## Screenshot ##
+
+<br>
+
+Das Repo enthält u.a. eine Klasse für eine kleine Swing-Applikation, die folgende Oberfläche hat:
+
+
+![Screenshot von Java-Programm mit Swing-UI](screenshot_1.png)
+
+<br>
 
 ----
 
