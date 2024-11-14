@@ -15,6 +15,12 @@ import javax.swing.border.EmptyBorder;
 
 
 /**
+ * Diese Klasse erzeugt mit Hilfe der GUI-Bibliothek Swing ein Fenster, in dem sich zwei 
+ * Schaltflächen befinden, die beide das Gleiche tun (nämlich eine Zahl hochzählen, wenn 
+ * sie angeklickt werden). Die Event-Handler für Button 1 wird "konventionell" (d.h. mit
+ * einer anonymen Klasse) realisiert, für Button 2 mit einem Lambda-Ausdruck.
+ * <br><br>
+ * 
  * Klasse in Anlehnung an ein Beispiel aus dem Buch "Grundkurs in Programmieren in Java"
  * von Ratz et al. (2024), siehe Kapitel 19.1.1 (Seite 684ff).
  */
@@ -47,8 +53,10 @@ public class ZaehlButtonsFrame extends JFrame {
 	    final Font font = new Font( "Arial", PLAIN, 20 );
 	    button1.setFont( font );
 	    button2.setFont( font );		
-		
+
+	    // Event-Handler für Button 1: Anonyme Klasse
 		final ActionListener al1 = new ActionListener() {
+
 			@Override
 			public void actionPerformed( ActionEvent e ) {
 				
@@ -56,6 +64,7 @@ public class ZaehlButtonsFrame extends JFrame {
 			}
 		};
 		
+	    // Event-Handler für Button 2
 		final ActionListener al2 = e -> button2.setText( ++_zaehler2 + "" );
 		
 		button1.addActionListener( al1 );

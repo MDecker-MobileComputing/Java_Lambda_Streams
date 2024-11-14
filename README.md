@@ -3,6 +3,8 @@
 <br>
 
 Dieses Repo enthält ein Eclipse-Projekt mit einigen Beispiel-Dateien zur Demonstration von Lambda-Ausdrücken in Java.
+Lambda-Ausdrücke in Java sind eine kompakte Syntax, um spezielle Interfaces – nämlich Interfaces, die eine Methode
+haben, also eine "Single Abstract Method (SAM)"  – zu implementieren.
 
 <br>
 
