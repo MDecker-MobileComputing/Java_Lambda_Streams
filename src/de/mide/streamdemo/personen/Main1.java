@@ -3,6 +3,12 @@ package de.mide.streamdemo.personen;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
+/**
+ * Diese Klasse demonstriert die Verwendung der zustandslosen Zwischen-Operatin
+ * {@code map()}, die für jedes Stream-Objekt, das bei ihr ankommt, durch ein
+ * anderes Objekt ersetzt.  
+ */
 public class Main1 {
 
 	public static void main( String[] args ) {
@@ -18,8 +24,8 @@ public class Main1 {
 		List<String> volleNamenListe = null;
 		
 		volleNamenListe = personenListe.stream()
-				                     .map( p -> p.getVorname() + " " + p.getNachname() )
-				                     .collect( Collectors.toList() );
+				                       .map( p -> p.getVorname() + " " + p.getNachname() )
+				                       .collect( Collectors.toList() );
 		
 		volleNamenListe.forEach( str -> System.out.println( str ) );
 		

@@ -4,11 +4,9 @@ import java.util.List;
 
 
 /**
- * Diese Klasse demonstriert die zustandsbehaftete Zwischen-Operation {@code sorted()};
- * hierfür muss das Interface {@code Comparable} von der Klasse {@code Person} implementiert 
- * werden. 
+ * Diese Klasse demonstriert Terminal-Operation {@code count()}.
  */
-public class Main3 {
+public class Main4 {
 
 	public static void main( String[] args ) {
 		
@@ -22,11 +20,11 @@ public class Main3 {
 						 new Person( "Alice" , "Armbruster", 2001 )
 					   );
 				                           		
-		personenListe.stream()
-				     .sorted()
-				     .forEach( pers -> System.out.println( pers ) );
+		long anzahl = personenListe.stream()
+				                   .filter( pers -> pers.getGebJahr() <= 1975 )
+				                   .count();
 		
-		System.out.println();
+		System.out.println( "\nAnzahl Personen, die 1975 oder früher geboren sind: " + anzahl + "\n" );
 	}
 	
 }
