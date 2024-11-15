@@ -5,7 +5,7 @@ import java.util.Objects;
 
 /**
  * Ein Objekt dieser Klasse repräsentiert eine Person mit den Attributen Vor- und Nachname
- * sowie Geburtsjahr.
+ * sowie Geburtsjahr. Diese Klasse wird von mehreren Beispielen zu Streams benötigt.
  * <br><br>
  * 
  * <b>Achtung:</b> Die Überschreibungen der Methoden {@code equals()} und {@code hashCode()}

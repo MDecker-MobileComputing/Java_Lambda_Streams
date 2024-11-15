@@ -4,7 +4,7 @@ import java.util.List;
 
 
 /**
- * Diese Klasse demonstriert Terminal-Operation {@code count()}.
+ * Diese Klasse demonstriert die Terminal-Operation {@code count()}.
  */
 public class Main4 {
 
