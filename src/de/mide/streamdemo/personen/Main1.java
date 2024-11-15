@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class Main1 {
 
-	public static void main(String[] args) {
+	public static void main( String[] args ) {
 		
 		System.out.println();
 		

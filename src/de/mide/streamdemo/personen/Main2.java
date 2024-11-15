@@ -6,7 +6,8 @@ import java.util.stream.Collectors;
 public class Main2 {
 
 	/**
-	 * Demonstration der Stream-Operation {@code distinct()} (zustandsbehaftete Zwischen-Operation).
+	 * Demonstration der Stream-Operation {@code distinct()} (zustandsbehaftete Zwischen-Operation),
+	 * die von jedem Objekt nur eines durchlässt. 
 	 * <br><br>
 	 * 
 	 * Weil in der Klasse {@link Person} die Methoden {@code hashCode()} und {@code equals()}
@@ -21,7 +22,7 @@ public class Main2 {
      * Bob Becker (1972)
 	 * </pre>
 	 */
-	public static void main(String[] args) {
+	public static void main( String[] args ) {
 		
 		System.out.println();
 		

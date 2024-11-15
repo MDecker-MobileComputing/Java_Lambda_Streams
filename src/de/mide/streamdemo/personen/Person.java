@@ -2,11 +2,18 @@ package de.mide.streamdemo.personen;
 
 import java.util.Objects;
 
+
 /**
  * Ein Objekt dieser Klasse repräsentiert eine Person mit den Attributen Vor- und Nachname
  * sowie Geburtsjahr.
+ * <br><br>
+ * 
+ * <b>Achtung:</b> Die Überschreibungen der Methoden {@code equals()} und {@code hashCode()}
+ * berücksichtigen nur Vor- und Nachname, die Überschreibung der Methode {@code compareTo()} 
+ * aus dem Interface {@code Comparable} berücksichtigt neben Vor- und Nachname auch
+ * das Geburtsjahr. 
  */
-public class Person {
+public class Person implements Comparable<Person> {
 
 	private String _vorname;
 	
@@ -14,7 +21,9 @@ public class Person {
 	
 	private int _gebJahr;
 	
-	
+	/**
+	 * Konstruktor um alle drei Attribute zu setzen.
+	 */
 	public Person( String vorname, String nachname, int gebJahr ) {
 		
 		_vorname  = vorname;
@@ -101,6 +110,37 @@ public class Person {
 			return false;
 		}
 		
+	}
+
+	
+	/**
+	 * Einzige Methode aus Interface {@code Comparable} überschreiben.
+	 * 
+	 * @param pers Objekt, mit dem das aufrufende Objekt verglichen werden soll
+	 * 
+	 * @return Ein negativer Wert, wenn diese Person kleiner ist als die andere Person,
+     *         0, wenn sie gleich sind, und ein positiver Wert, wenn diese Person größer ist.
+     *         Es wird zuerst der Nachname verglichen, dann der Vorname und zuletzt das
+     *         Geb-Jahr. Das erste Attribute mit unterschiedlichen Werten bestimmt die
+     *         Sortier-Reihenfolge.
+	 */
+	@Override
+	public int compareTo( Person pers ) {
+
+        int vergleichNachname = _nachname.compareTo( pers.getNachname() );
+        
+        if ( vergleichNachname != 0 ) { // die beiden Nachnamen sind nicht gleich
+        	
+            return vergleichNachname;
+        }
+        
+        int vergleichVorname = _vorname.compareTo( pers.getVorname () );
+        if ( vergleichVorname != 0 ) { // die beiden Vornamen sind nicht gleich
+        	
+            return vergleichNachname;
+        }        
+		
+        return Integer.compare( _gebJahr, pers.getGebJahr() );
 	}
 		
 }
