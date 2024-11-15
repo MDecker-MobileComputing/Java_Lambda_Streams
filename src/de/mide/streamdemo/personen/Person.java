@@ -108,13 +108,14 @@ public class Person implements Comparable<Person> {
 		} else {
 			
 			return false;
-		}
-		
+		}		
 	}
 
 	
 	/**
-	 * Einzige Methode aus Interface {@code Comparable} überschreiben.
+	 * Überschreibung der einzigen Methode aus dem Interface {@code Comparable}; das
+	 * aufrufende Objekt wird mit dem Argument {@code pers} verglichen. Diese
+	 * Methode wird zum Sortieren benötigt.
 	 * 
 	 * @param pers Objekt, mit dem das aufrufende Objekt verglichen werden soll
 	 * 
