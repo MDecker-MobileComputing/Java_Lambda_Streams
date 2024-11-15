@@ -24,7 +24,7 @@ public class Main4 {
 				                   .filter( pers -> pers.getGebJahr() <= 1975 )
 				                   .count();
 		
-		System.out.println( "\nAnzahl Personen, die 1975 oder früher geboren sind: " + anzahl + "\n" );
+		System.out.println( "Anzahl Personen, die 1975 oder früher geboren sind: " + anzahl + "\n" );
 	}
 	
 }
